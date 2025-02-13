@@ -5,7 +5,7 @@ const Home = () => {
     const { currentUser, isUserLoggedIn, loading: authLoading } = useAuth(); // Access auth context
   return (
     <div>
-      Hello {currentUser.displayName}
+      Hello {currentUser?.displayName}
     </div>
   )
 }

@@ -26,7 +26,7 @@ const LoginForm = () => {
       setLoading(true);
       const result = await signInWithPopup(auth, provider);
       navigate('/'); // Redirect after successful Google login
-      console.log(result.user);
+      // console.log(result.user);
     } catch (err) {
       setError('Something went wrong during Google sign-in!');
       console.error(err.message);
